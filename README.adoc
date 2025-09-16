@@ -1,31 +1,26 @@
-:imagesdir: ../assets/images
+= 플랫폼 엔지니어링 워크숍
 
-= Platform Engineering Workshop
-안녕하세요
-== Introduction
-Organizations often struggle with a variety of circumstances that can impact productivity within the teams (high cognitive load, lack of standardization, domain knowledge fragmentation). +
-This could result in inefficient or reduced Productivity, higher maintenance costs and/or security vulnerabilities.
+== 소개
+조직은 종종 팀 내 생산성에 영향을 미칠 수 있는 다양한 상황(높은 인지 부하, 표준화 부족, 도메인 지식 파편화)으로 어려움을 겪습니다. +
+이는 비효율적이거나 감소된 생산성, 높은 유지보수 비용 및/또는 보안 취약점으로 이어질 수 있습니다.
 
-Red Hat provides the tools and know-how to help "The Providers" (The Platform Engineers) to create "The Product" (their custom IDP) based on the needs of "The Customers" (all Development Teams within the organization).
+레드햇은 "제공자"(플랫폼 엔지니어)가 "고객"(조직 내 모든 개발팀)의 요구사항을 기반으로 "제품"(자체 IDP)을 만들 수 있도록 지원하는 도구와 노하우를 제공합니다.
 
-안녕하세요
-This workshop is meant for Platform Engineers who are in charge of 
+이 워크숍은 다음과 같은 일을 담당하는 플랫폼 엔지니어를 대상으로 합니다.
+* 모든 환경(개발, 테스트, 생산)에서 사용할 수 있는 표준 기술을 만들고,
+* 프로세스를 정의하고 개발팀의 시간과 자원을 최대한 활용하도록 보장합니다.
 
-* creating standard technologies that can be used in all environments (Development, Testing, Production), and
-* defining processes and ensuring they are maximizing the time and resources for Development Teams.
+소프트웨어 솔루션을 만들고 코딩, 빌드, 배포, 실행, 모니터링 및 문서화를 위한 자체 도구를 선택할 권한을 부여받은(전통적으로 말하는) 개발팀도 이 워크숍의 혜택을 받을 수 있습니다.
 
-Development Teams who are in charge of creating a software solution and empower (traditionally speaking) in picking their own tools for coding, building, deploying, running, monitoring and documentation may also benefit from this.
+== *배울 내용:*
 
-== *What you will  learn:*
-
-* Understand the need to implement Platform Engineering disciplines in their organization and see the clear benefits of improving the Developer Productivity
-* How to design a Thinnest Viable Platform (TVP) based on the needs of ALL development teams in the organization and ensure they are highly productive as possible
-* Constantly assessing the investment into their own IDP and understand how they can enhance and convince ALL development teams to start adopting
-* See how Red Hat can help as a partner in your Platform Engineering journey
+* 조직에 플랫폼 엔지니어링 원칙을 구현해야 하는 필요성을 이해하고 개발자 생산성 향상의 분명한 이점을 확인합니다.
+* 조직 내 모든 개발팀의 요구사항을 기반으로 가장 가벼운 실행 가능한 플랫폼(TVP)을 설계하고 생산성을 최대한 높이는 방법을 이해합니다.
+* 자체 IDP에 대한 투자를 지속적으로 평가하고 모든 개발팀이 채택을 시작하도록 설득하고 강화하는 방법을 이해합니다.
+* 레드햇이 플랫폼 엔지니어링 여정의 파트너로서 어떻게 도움을 줄 수 있는지 확인합니다.
 
 
-== Instructions
+== 지침
 
-Preview the instructions here: https://redhat-pe-workshop.github.io/showroom/
+여기에 있는 지침을 미리 볼 수 있습니다: https://github.io/jangminjun/showroom/
 
-And here is a single page version of the set of instructions: https://redhat-pe-workshop.github.io/showroom/modules/singlepage.html
