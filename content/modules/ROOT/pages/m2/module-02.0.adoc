@@ -1,42 +1,42 @@
 :imagesdir: ../assets/images
 
-= Module 2: Design the Internal Developer Portal
+= Module 2: Internal Developer Portal 설계
 
 include::../style.adoc[]
 
-== Overview
+== 개요
 
-{product_name_rhdh} is based on the https://backstage.io/[Backstage^, window="content"] project for building internal developer portals. This project was donated to the https://www.cncf.io/projects/backstage/[CNCF^, window="content"] by Spotify in 2020. Platform engineers can use {product_name_rhdh} to build internal developer portals. Doing so involves integrating {product_name_rhdh} with various data sources, cataloging existing software components, infrastructure, and resources, configuring single sign-on, and more.
+{product_name_rhdh}는 내부 개발자 포털 구축을 위한 [Backstage^, window="content"] 프로젝트를 기반으로 합니다. 이 프로젝트는 2020년 Spotify에서 [CNCF^, window="content"]에 기증했습니다. 플랫폼 엔지니어는 {product_name_rhdh}를 사용하여 내부 개발자 포털을 구축할 수 있습니다. 여기에는 {product_name_rhdh}를 다양한 데이터 소스와 통합하고, 기존 소프트웨어 구성 요소, 인프라 및 리소스를 카탈로그화하며, 단일 로그인(SSO) 등을 구성하는 작업이 포함됩니다.
 
-In this module you'll learn how to architect, install, and bootstrap an instance of {product_name_rhdh} to create a minimum viable internal developer portal for a select group of developers within your organization.
+이 모듈에서는 조직 내 특정 개발자 그룹을 위한 최소한의 내부 개발자 포털을 만들기 위해 {product_name_rhdh} 인스턴스를 설계, 설치, 부트스트랩하는 방법을 배웁니다.
 
-The initial use cases for your developer portal are:
+개발자 포털의 초기 사용 사례는 다음과 같습니다:
 
-* Self-service discovery of software components and dependencies.
-* Visibility into CI/CD pipelines.
-* Hosting documentation.
-* Scaffolding projects that adhere to organizational best practices.
+* 소프트웨어 구성 요소 및 종속성에 대한 셀프 서비스 검색.
+* CI/CD 파이프라인 가시성.
+* 문서 호스팅.
+* 조직의 모범 사례를 준수하는 프로젝트 스캐폴딩.
 
-== Module Objectives
+== 모듈 목표
 
-Satisfying the previously defined use cases involves configuring {product_name_rhdh} to integrate with your existing platforms, tools, and infrastructure. For example, if your organization uses OpenShift Pipelines for continuous integration, you'll need to configure the {product_name_rhdh} instance with the appropriate integration to fetch and display data from an OpenShift cluster used to perform https://tekton.dev/docs/pipelines/pipelineruns/[Pipeline Runs^, window="content"].
+앞서 정의된 사용 사례를 충족하려면 {product_name_rhdh}를 기존 플랫폼, 도구 및 인프라와 통합하도록 구성해야 합니다. 예를 들어, 조직이 지속적 통합을 위해 OpenShift Pipelines를 사용하는 경우, [Pipeline Runs^, window="content"]를 수행하는 데 사용되는 OpenShift 클러스터에서 데이터를 가져와 표시하기 위해 {product_name_rhdh} 인스턴스에 적절한 통합을 구성해야 합니다.
 
-It could be said that the value of an internal developer portal is proportional to the thought and energy invested into it by the platform engineer(s), and developers using it.
+내부 개발자 포털의 가치는 플랫폼 엔지니어와 이를 사용하는 개발자들이 투자하는 생각과 에너지에 비례한다고 할 수 있습니다.
 
-In this module you'll:
+이 모듈에서 여러분은 다음을 수행합니다:
 
-* Identify the platform requirements and dependencies, such as single sign-on (SSO), source code management (SCM), RBAC, resources, existing assets
-* Integrate {product_name_rhdh} with the dependant services, such as GitLab and Keycloak
-* Learn about https://backstage.io/docs/features/software-catalog/[Backstage Entities^, window="content"], e.g. Components, APIs, and Docs
-* Ready the platform for developer onboarding
+* 단일 로그인(SSO), 소스 코드 관리(SCM), RBAC, 리소스, 기존 자산 등 플랫폼 요구 사항 및 종속성 파악
+* GitLab 및 Keycloak과 같은 종속 서비스와 {product_name_rhdh} 통합
+* [Backstage 엔티티^, window="content"](예: 구성 요소, API, 문서)에 대해 학습
+* 개발자 온보딩을 위한 플랫폼 준비
 
-== Workshop Environment
+== 워크숍 환경
 
-Your workshop environment has been preconfigured with the following software and platform components:
+워크숍 환경은 다음 소프트웨어 및 플랫폼 구성 요소로 미리 구성되어 있습니다:
 
 * Red Hat Build of Keycloak
 * OpenShift GitOps
 * OpenShift Pipelines
 * GitLab
 
-For the purposes of this workshop, we'll assume that your organization has standardized on these tools, and it's your objective as the platform engineer to integrate them with {product_name_rhdh}.
+이 워크숍의 목적은 플랫폼 엔지니어로서 이러한 도구들을 {product_name_rhdh}와 통합하는 것입니다.
