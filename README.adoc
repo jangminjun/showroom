@@ -1,7 +1,7 @@
 :imagesdir: ../assets/images
 
 = Platform Engineering Workshop
-
+안녕하세요
 == Introduction
 Organizations often struggle with a variety of circumstances that can impact productivity within the teams (high cognitive load, lack of standardization, domain knowledge fragmentation). +
 This could result in inefficient or reduced Productivity, higher maintenance costs and/or security vulnerabilities.
