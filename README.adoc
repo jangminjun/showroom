@@ -8,7 +8,7 @@ This could result in inefficient or reduced Productivity, higher maintenance cos
 
 Red Hat provides the tools and know-how to help "The Providers" (The Platform Engineers) to create "The Product" (their custom IDP) based on the needs of "The Customers" (all Development Teams within the organization).
 
-
+안녕하세요
 This workshop is meant for Platform Engineers who are in charge of 
 
 * creating standard technologies that can be used in all environments (Development, Testing, Production), and
